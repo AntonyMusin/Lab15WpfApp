@@ -1,0 +1,146 @@
+﻿<Window x:Class="Lab15WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab15WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1350" Width="600">
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <Paragraph FontWeight="Bold" FontSize="20" Margin="10" Padding="5" Background="LightCyan" TextAlignment="Center">
+                    Как зажечь спичку о спичку?
+                </Paragraph>
+                <Paragraph TextAlignment="Left" FontWeight="Bold" TextDecorations="Underline">
+                    Вам понадобиться:
+                </Paragraph>
+                <List MarkerStyle="Circle"  TextAlignment="Left" MarkerOffset="5">
+                    <ListItem>
+                        <Paragraph>
+                            Канцелярская резинка
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Две спички
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Две руки с развитыми моторными навыками
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn Width="0.45*"/>
+                        <TableColumn Width="0.05*"/>
+                        <TableColumn Width="0.45*"/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph Margin="5">
+                                    1. Берем обычную канцелярскую резинку и делаем из нее петельку.
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell/>
+                            <TableCell>
+                                <Paragraph Margin="5">
+                                    <Image Source="Data/StepOne.jpg"/>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph Margin="5">
+                                    2. Верхний конец петельки загибаем и прижимаем большим пальцем.
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell/>
+                            <TableCell>
+                                <Paragraph Margin="5">
+                                    <Image Source="Data/StepTwo.jpg"/>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph Margin="5">
+                                    3. Выворачиваем полученные мини-петельки от себя и прикладываем их друг к другу.
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell/>
+                            <TableCell>
+                                <Paragraph Margin="5">
+                                    <Image Source="Data/StepThree.jpg"/>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph Margin="5">
+                                    4. Надеваем их на одну из спичек и затягиваем петли поближе к головке, потянув за свободный край резинки. Получился узелок.
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell/>
+                            <TableCell>
+                                <Paragraph Margin="5">
+                                    <Image Source="Data/StepFour.jpg"/>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph Margin="5">
+                                    5. В образовавшуюся на свободном крае петлю вставляем вторую спичку.
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell/>
+                            <TableCell>
+                                <Paragraph Margin="5">
+                                    <Image Source="Data/StepFive.jpg"/>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph Margin="5">
+                                    6. Вторую спичку держим вертикально, а первую спичку держим горизонтально и оттягиваем на максимальное расстояние, которое позволяет резинка.
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell/>
+                            <TableCell>
+                                <Paragraph Margin="5">
+                                    <Image Source="Data/StepSix.jpg"/>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph Margin="5">
+                                    7. Отпускаем спичку с натянутой резинкой и высекаем огонь!
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell/>
+                            <TableCell>
+                                <Paragraph Margin="5">
+                                    <Image Source="Data/StepSeven.jpg"/>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+                <BlockUIContainer>
+                    <StackPanel>
+                        <TextBlock Text="Посмотреть на YouTube" HorizontalAlignment="Center"/>
+                        <Button Height="50" Width="50">
+                        <Image Source="Data/YT.png"/>
+                    </Button>
+                    </StackPanel>
+                </BlockUIContainer>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Window>
